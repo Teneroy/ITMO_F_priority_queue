@@ -23,11 +23,9 @@ public:
 private:
     p_t _arr[10];
     int _end;//последний НЕ занятый элемент
-    //функция, которая свапает родителя и элемент до тех пор, пока приоритет родителя не станет <= приоритета узла
-    //void nodeSwap(int npos /*Позиция узла, который мы хотим поднять*/, int ppos /*Позиция узла, который мы хотим опустить*/); //свапает узлы
-    void swapN(int &p1, int &p2);
-    bool swapLeft(int i) const;
-    bool swapRight(int i) const;
+    void swapN(int &p1, int &p2); //меняем значения узлов местами
+    bool swapLeft(int i) const; //Выполнение условия для смены местами левого сына и родителя
+    bool swapRight(int i) const;//Выполнение условия для смены местами правого сына и родителя
 };
 
 #endif //ITMO_F_PRIORITY_QUEUE_PQUEUE_H
